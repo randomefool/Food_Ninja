@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="737.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RiderLoginController">
+   <children>
+      <ImageView fitHeight="744.0" fitWidth="1007.0" layoutX="-9.0" layoutY="-1.0">
+         <image>
+            <Image url="@../Pictures/photo-1572195577046-2f25894c06fc.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#e4160f" layoutX="360.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rider Login">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#141313" layoutX="312.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="175.8984375">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="456.0" layoutY="315.0" prefHeight="31.0" prefWidth="227.0" promptText="Username" />
+      <Text fill="#1b1a1a" layoutX="312.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="502.0" layoutY="486.0" mnemonicParsing="false" onAction="#riderfunction" prefHeight="45.0" prefWidth="76.0" text="Login" />
+      <Button layoutX="48.0" layoutY="564.0" mnemonicParsing="false" onAction="#loginas" prefHeight="47.0" prefWidth="88.0" text="Back" />
+      <PasswordField fx:id="rider_pass" layoutX="456.0" layoutY="382.0" prefHeight="32.0" prefWidth="227.0" promptText="Password" />
+      <Label fx:id="Invalid_Label" layoutX="456.0" layoutY="431.0" prefHeight="21.0" prefWidth="205.0" textFill="#d91616">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="158.0" endY="-9.0" layoutX="455.0" layoutY="171.0" startX="-109.0" startY="-9.0" />
+   </children>
+</AnchorPane>

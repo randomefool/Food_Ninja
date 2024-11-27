@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="916.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RestaurantfunctionController">
+   <children>
+      <ImageView fitHeight="824.0" fitWidth="1186.0" layoutX="-122.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/restaurant-background-vector-400201.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="341.0" layoutY="304.0" mnemonicParsing="false" onAction="#addfood" prefHeight="47.0" prefWidth="204.0" text="AddFoodDetails" />
+      <Button layoutX="341.0" layoutY="399.0" mnemonicParsing="false" onAction="#Update" prefHeight="47.0" prefWidth="204.0" text="UpdateFoodDetails" />
+      <Button layoutX="341.0" layoutY="597.0" mnemonicParsing="false" onAction="#CheckOrder" prefHeight="47.0" prefWidth="204.0" text="CheckFoodOrder" />
+      <Text layoutX="321.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d6a80d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button layoutX="86.0" layoutY="737.0" mnemonicParsing="false" onAction="#loginas" prefHeight="47.0" prefWidth="88.0" text="Back" />
+      <Button layoutX="341.0" layoutY="496.0" mnemonicParsing="false" onAction="#RemoveFood" prefHeight="47.0" prefWidth="204.0" text="DeleteFood" />
+      <Button layoutX="341.0" layoutY="220.0" mnemonicParsing="false" onAction="#AddMenu" prefHeight="47.0" prefWidth="204.0" text="Add Menu" />
+      <Button layoutX="800.0" layoutY="23.0" mnemonicParsing="false" onAction="#Logout" prefHeight="47.0" prefWidth="88.0" text="Logout" />
+   </children>
+</AnchorPane>
