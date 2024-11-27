@@ -1,2 +1,2 @@
 # Food_Ninja
-A food deliver app
+A food delivery app
